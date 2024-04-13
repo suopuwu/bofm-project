@@ -1,112 +1,75 @@
 document.addEventListener('DOMContentLoaded', () => {
     let quote = document.querySelector('.quote-text')
     let quotes = [
-        'Repent, for the kingdom of heaven is near.',
-
-        'It is written: Man does not live on bread alone, but on every word that comes from the mouth of God.',
-
-        'You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled by men.',
-
-        'Let your light shine before men, that they may see your good deeds and praise your father in heaven.',
-
-        'Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them.',
-
-        'Whoever has will be given more; whoever does not have, even what he has will be taken from him.',
-
-        'Be careful not to do your acts of righteousness before men, to be seen by them. If you do, you will have no reward from your Father in heaven.',
-
-        'But when you pray, go into your room, close the door and pray to your Father, who is unseen. Then your Father who sees what is done in secret will reward you.',
-
-        'If you forgive men when they sin against you, your heavenly Father will also forgive you.',
-
-        'Do not store up for yourselves treasures on earth, where moth and rust destroy, and where thieves break in and steal. But store up for yourselves treasures in heaven, where moth and rust do not destroy, and where thieves do not break in and steal. For where your treasure is, there your heart will be also.',
-
-        'Only in his hometown, among his relatives and in his own house is a prophet without honor.',
-
-        'Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more important than food, and the body more important than clothes?',
-
-        'Who of you by worrying can add a single hour to his life?',
-
-        'Do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.',
-
-        'Do not judge, or you too will be judged.',
-
-        "Why do you look at the speck in of sawdust in your brother's eye and pay no attention to the plank in your own eye?",
-
         'Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.',
-
-        'If you, then, though you are evil, know how to give good gifts to your children, how much more will your Father in heaven give good gifts to those who ask him!',
-
-        "Watch out that no one deceives you. For many will come in my name, claiming 'I am the Christ', and will deceive many.",
-
-        'Enter through the narrow gate. For wide is the gate and broad is the road that leads to destruction, and many enter through it. But small is the gate and narrow the road that leads to life, and only a few find it.',
-
-        "Watch out for false prophets. They come to you in sheep's clothing, but inwardly they are ferocious wolves.",
-
-        'Take heart son, your sins are forgiven.',
-
-        'Do not be afraid of those who kill the body but cannot kill the soul. Rather, be afraid of the One who can destroy both soul and body in hell.',
-
-        'Whoever disowns me before men, I will disown him before my Father in heaven.',
-
-        'Whoever finds his life will lose it, and whoever loses his life for my sake will find it.',
-
-        'Come to me, all you who are weary and burdened, and I will give you rest.',
-
-        'Make a tree good and its fruit will be good, or make a tree bad and its fruit will be bad, for a tree is recognized by its fruit.',
-
-        'For whoever does the will of my Father in heaven is my brother and sister and mother.',
-
-        'The kingdom of heaven is like treasure hidden in a field. When a man found it, he hid it again, and then in his joy went and sold all he had and bought that field.',
-
-        'These people honor me with their lips, but their hearts are far from me. They worship me in vain; their teachings are but rules taught by men.',
-
-        'If anyone would come after me, he must deny himself and take up his cross and follow me.',
-
-        "Because you have so little faith. I tell you the truth, if you have faith as small as a mustard seed, you can say to this mountain, 'Move from here to there' and it will move. Nothing is impossible for you.",
-
-        'Come with me by yourselves to a quiet place and get some rest.',
-
-        'Love the Lord your God will all your heart and with all your soul and with all your mind.',
-
-        'Love your neighbor as yourself.',
-
-        'So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets.',
-
-        'Because of the increase of wickedness, the love of most will grow cold, but he who stands firm to the end will be saved.',
-
-        'But I tell you: Love your enemies and pray for those who persecute you, that you may be sons of your Father in heaven. He causes his sun to rise on the evil and the good, and sends rain on the righteous and unrighteous.',
-
-        'No one can serve two masters. Either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve both God and money.',
-
-        'What do you think? If a man owns a hundred sheep, and one of them wanders away, will he not leave the ninety-nine on the hills and go to look for the one that wandered off?',
-
-        'But I tell you who hear me: Love your enemies, do good to those who hate you, bless those who curse you, pray for those who mistreat you.',
-
-        'Give to everyone who asks you, and if anyone takes what belongs to you, do not demand it back.',
-
-        'Whoever welcomes one of these little children in my name welcomes me; and whoever welcomes me does not welcome me but the one who sent me.',
-
-        'Let the little children come to me, and do not hinder them, for the kingdom of God belongs to such as these.',
-
-        'I tell you the truth, anyone who will not receive the kingdom of God like a little child will never enter it.',
-
-        'For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.',
-
-        'Go into all the world and preach the good news to all creation.',
-
-        'Abba, Father, everything is possible for you. Take this cup from me. Yet not what I will, but what you will.',
-
-        'When the dead rise, they will neither marry nor be given in marriage; they will be like the angels in heaven.',
-
-        'All men will hate you because of me, but he who stands firm to the end will be saved.',
-
-        'At that time men will see the Son of Man coming in clouds with great power and glory.',
-
-        'I must preach the good news of the kingdom of God to the other towns also, because that is why I was sent.',
-
-        'Blessed are you who are poor, for yours is the kingdom of God.',
+        'But charity is the pure love of Christ, and it endureth forever; and whoso is found possessed of it at the last day, it shall be well with him.',
+        'I would that ye should come unto Christ, who is the Holy One of Israel, and partake of his salvation, and the power of his redemption. Yea, come unto him, and offer your whole souls as an offering unto him, and continue in fasting and praying, and endure to the end; and as the Lord liveth ye will be saved.',
+        'the Lord has made the sea our path, and we are upon an isle of the sea.',
+        'For he that diligently seeketh shall find; and the mysteries of God shall be unfolded unto them, by the power of the Holy Ghost, as well in these times as in times of old as in times to come; wherefore, the course of the Lord is one eternal round',
+        'But wo, wo unto him who knoweth that he rebelleth against God! For salvation cometh to none such except it be through repentance and faith on the Lord Jesus Christ.',
+        'And the Father said: Repent ye, repent ye, and be baptized in the name of my Beloved Son.',
+        'And now, my beloved brethren, I know by this that unless a man shall endure to the end, in following the example of the Son of the living God, he cannot be saved.',
+        'And we talk of Christ, we rejoice in Christ, we preach of Christ, we prophesy of Christ, and we write according to our prophecies, that our children may know to what source they may look for a remission of their sins.',
+        'For we labor diligently to write, to persuade our children, and also our brethren, to believe in Christ, and to be reconciled to God; for we know that it is by grace that we are saved, after all we can do.',
+        'And now, my sons, remember, remember that it is upon the rock of our Redeemer, who is Christ, the Son of God, that ye must build your foundation; that when the devil shall send forth his mighty winds, yea, his shafts in the whirlwind, yea, when all his hail and his mighty storm shall beat upon you, it shall have no power over you to drag you down to the gulf of misery and endless wo, because of the rock upon which ye are built, which is a sure foundation, a foundation whereon if men build they cannot fall.',
+        'And as I spake concerning the convincing of the Jews, that Jesus is the very Christ, it must needs be that the Gentiles be convinced also that Jesus is the Christ, the Eternal God;',
+        'And he shall be called Jesus Christ, the Son of God, the Father of heaven and earth, the Creator of all things from the beginning; and his mother shall be called Mary.',
+        'But behold, the Lord hath redeemed my soul from hell; I have beheld his glory, and I am encircled about eternally in the arms of his love.',
+        'And according to the words of the prophets, and also the word of the angel of God, his name shall be Jesus Christ, the Son of God.',
+        'And now behold, I say unto you, my brethren, if ye have experienced a change of heart, and if ye have felt to sing the song of redeeming love, I would ask, can ye feel so now?',
+        'For the gate by which ye should enter is repentance and baptism by water; and then cometh a remission of your sins by fire and by the Holy Ghost.',
+        'For behold, the covenant which I have made with my people is not all fulfilled; but the law which was given unto Moses hath an end in me.',
+        'And he also spake concerning the prophets, how great a number had testified of these things, concerning this Messiah, of whom he had spoken, or this Redeemer of the world.',
+        'And after they had slain the Messiah, who should come, and after he had been slain he should rise from the dead, and should make himself manifest, by the Holy Ghost, unto the Gentiles.',
+        'Wherefore, redemption cometh in and through the Holy Messiah; for he is full of grace and truth.',
+        'And behold, he cometh to redeem those who will be baptized unto repentance, through faith on his name.',
+        'And they were taught to love one another, and to serve one another.',
+        'Yea, they did mourn for their departure, for they knew not whither they had fled. Now they would have gladly joined with them, for they themselves had entered into a covenant with God to serve him and keep his commandments.',
+        'And as I spake concerning the convincing of the Jews, that Jesus is the very Christ, it must needs be that the Gentiles be convinced also that Jesus is the Christ, the Eternal God;',
+        'But behold, the Lord hath redeemed my soul from hell; I have beheld his glory, and I am encircled about eternally in the arms of his love.',
+        'And behold, he shall be born of Mary, at Jerusalem which is the land of our forefathers, she being a virgin, a precious and chosen vessel, who shall be overshadowed and conceive by the power of the Holy Ghost, and bring forth a son, yea, even the Son of God.',
+        'For the gate by which ye should enter is repentance and baptism by water; and then cometh a remission of your sins by fire and by the Holy Ghost.',
+        'For behold, the covenant which I have made with my people is not all fulfilled; but the law which was given unto Moses hath an end in me.',
+        'And after they had slain the Messiah, who should come, and after he had been slain he should rise from the dead, and should make himself manifest, by the Holy Ghost, unto the Gentiles.',
+        'And behold, he cometh to redeem those who will be baptized unto repentance, through faith on his name.',
+        'Wherefore, redemption cometh in and through the Holy Messiah; for he is full of grace and truth.',
+        'And behold, I am the light and the life of the world; and I have drunk out of that bitter cup which the Father hath given me, and have glorified the Father in taking upon me the sins of the world, in the which I have suffered the will of the Father in all things from the beginning.',
+        'And I say unto you, that if the Gentiles do not repent after the blessing which they shall receive, after they have scattered my people—Then shall ye, who are a remnant of the house of Jacob, go forth among them; and ye shall be in the midst of them who shall be many; and ye shall be among them as a lion among the beasts of the forest, and as a young lion among the flocks of sheep, who, if he goeth through both treadeth down and teareth in pieces, and none can deliver.',
+        'And he shall come into the world to redeem his people; and he shall take upon him the transgressions of those who believe on his name; and these are they that shall have eternal life, and salvation cometh to none else.',
+        'Wherefore, the things which I have written sufficeth me, save it be a few words which I must speak concerning the doctrine of Christ; wherefore, I shall speak unto you plainly, according to the plainness of my prophesying.',
+        'And now, behold, my beloved brethren, I suppose that ye ponder somewhat in your hearts concerning that which ye should do after ye have entered in by the way. But, behold, why do ye ponder these things in your hearts?',
+        'And I, Jacob, saw that I must soon go down to my grave; wherefore, I said unto my son Enos: Take these plates. And I told him the things which my brother Nephi had commanded me, and he promised obedience unto the commands. And I make an end of my writing upon these plates, which writing has been small; and to the reader I bid farewell, hoping that many of my brethren may read my words. Brethren, adieu.',
+        'Behold, I say unto you that the law is fulfilled that was given unto Moses.',
+        'For I know that ye have searched much, many of you, to know of things to come; wherefore I know that ye know that our flesh must waste away and die; nevertheless, in our bodies we shall see God.',
+        'And if our plates had been sufficiently large we should have written in Hebrew; but the Hebrew hath been altered by us also; and if we could have written in Hebrew, behold, ye would have had no imperfection in our record.',
+        'For as their laws and their governments were established by the voice of the people, and they who chose evil were more numerous than they who chose good, therefore they were ripening for destruction, for the laws had become corrupted.',
+        'And now, my brethren, I have spoken unto you concerning pride; and those of you which have afflicted your neighbor, and persecuted him because ye were proud in your hearts, of the things which God hath given you, what say ye of it?',
+        'And now, my brethren, I would that ye should humble yourselves before God, and bring forth fruit meet for repentance, that ye may also enter into that rest.',
+        'Yea, I know that God will give liberally to him that asketh. Yea, my God will give me, if I ask not amiss; therefore I will lift up my voice unto thee; yea, I will cry unto thee, my God, the rock of my righteousness. Behold, my voice shall forever ascend up unto thee, my rock and mine everlasting God. Amen.',
+        'And I know that ye do walk in the pride of your hearts; and there are none save a few only who do not lift themselves up in the pride of their hearts, unto the wearing of very fine apparel, unto envying, and strifes, and malice, and persecutions, and all manner of iniquities; and your churches, yea, even every one, have become polluted because of the pride of your hearts.',
+        'And now behold, I, Jarom, write a few words according to the commandment of my father, Enos, that our genealogy may be kept.',
+        'And now behold, two hundred years had passed away, and the people of Nephi had waxed strong in the land. They observed to keep the law of Moses and the sabbath day holy unto the Lord. And they profaned not; neither did they blaspheme. And the laws of the land were exceedingly strict.',
+        'For behold, it came to pass that fifty and five years had passed away from the time that Lehi left Jerusalem; wherefore, Nephi gave me, Jacob, a commandment concerning the small plates, upon which these things are engraven.',
+        'Wherefore, as I said unto you, it must needs be expedient that Christ—for in the last night the angel spake unto me that this should be his name—should come among the Jews, among those who are the more wicked part of the world; and they shall crucify him—for thus it behooveth our God, and there is none other nation on earth that would crucify their God.',
+        'Yea, it shall come in a day when there shall be churches built up that shall say: Come unto me, and for your money you shall be forgiven of your sins.',
+        'And now, behold, my beloved brethren, I suppose that ye ponder somewhat in your hearts concerning that which ye should do after ye have entered in by the way. But, behold, why do ye ponder these things in your hearts?',
+        'And we talk of Christ, we rejoice in Christ, we preach of Christ, we prophesy of Christ, and we write according to our prophecies, that our children may know to what source they may look for a remission of their sins.',
+        'And I, Jacob, saw that I must soon go down to my grave; wherefore, I said unto my son Enos: Take these plates. And I told him the things which my brother Nephi had commanded me, and he promised obedience unto the commands. And I make an end of my writing upon these plates, which writing has been small; and to the reader I bid farewell, hoping that many of my brethren may read my words. Brethren, adieu.',
+        'Behold, I say unto you that the law is fulfilled that was given unto Moses.',
+        'For I know that ye have searched much, many of you, to know of things to come; wherefore I know that ye know that our flesh must waste away and die; nevertheless, in our bodies we shall see God.',
+        'And if our plates had been sufficiently large we should have written in Hebrew; but the Hebrew hath been altered by us also; and if we could have written in Hebrew, behold, ye would have had no imperfection in our record.',
+        'For as their laws and their governments were established by the voice of the people, and they who chose evil were more numerous than they who chose good, therefore they were ripening for destruction, for the laws had become corrupted.',
+        'And now, my brethren, I have spoken unto you concerning pride; and those of you which have afflicted your neighbor, and persecuted him because ye were proud in your hearts, of the things which God hath given you, what say ye of it?',
+        'And now, my brethren, I would that ye should humble yourselves before God, and bring forth fruit meet for repentance, that ye may also enter into that rest.',
+        'Yea, I know that God will give liberally to him that asketh. Yea, my God will give me, if I ask not amiss; therefore I will lift up my voice unto thee; yea, I will cry unto thee, my God, the rock of my righteousness. Behold, my voice shall forever ascend up unto thee, my rock and mine everlasting God. Amen.',
+        'For behold, if the knowledge of the goodness of God at this time has awakened you to a sense of your nothingness, and your worthless and fallen state—',
+        'And I know that ye do walk in the pride of your hearts; and there are none save a few only who do not lift themselves up in the pride of their hearts, unto the wearing of very fine apparel, unto envying, and strifes, and malice, and persecutions, and all manner of iniquities; and your churches, yea, even every one, have become polluted because of the pride of your hearts.',
+        'And now behold, I, Jarom, write a few words according to the commandment of my father, Enos, that our genealogy may be kept.',
+        'And now behold, two hundred years had passed away, and the people of Nephi had waxed strong in the land. They observed to keep the law of Moses and the sabbath day holy unto the Lord. And they profaned not; neither did they blaspheme. And the laws of the land were exceedingly strict.',
+        'For behold, it came to pass that fifty and five years had passed away from the time that Lehi left Jerusalem; wherefore, Nephi gave me, Jacob, a commandment concerning the small plates, upon which these things are engraven.',
+        'Wherefore, as I said unto you, it must needs be expedient that Christ—for in the last night the angel spake unto me that this should be his name—should come among the Jews, among those who are the more wicked part of the world; and they shall crucify him—for thus it behooveth our God, and there is none other nation on earth that would crucify their God.',
+        'Yea, it shall come in a day when there shall be churches built up that shall say: Come unto me, and for your money you shall be forgiven of your sins.',
     ]
-    console.log(Math.random(4) % quotes.length)
+    console.log(quotes.length)
     quote.innerHTML = quotes[Math.floor(Math.random() * quotes.length)]
 })
